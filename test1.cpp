@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
 	
-	int x,y;
+	int x,y,z;
 	
 	cout<<" inserta numero A :"<<endl;
 	cin>>x;
@@ -14,9 +14,12 @@ int main() {
 	cout<<" inserta numero B :"<<endl;
 	cin>>y;
 	
+	cout <<" inserta numero C :"<<endl;
+	cin>>z;
+
 	int suma;
 	
-	suma= x+y;
+	suma= x+y+z;
 	
 	
 	cout<<" el resultado es :"<<suma<<endl;
