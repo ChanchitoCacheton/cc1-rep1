@@ -2,7 +2,7 @@
 #include <math.h>
 using namespace std;
 
-void calculaPotencia(int num){
+bool calculaPotencia(int num){
 
 
 	int n1= num*2;
@@ -10,12 +10,10 @@ void calculaPotencia(int num){
 
 	if(raiz%2==0){
 
-		cout<<" el numero ["<<num<<"] es potencia de dos"<<endl;
+		return true;
 
 	}
-	else{
-		cout<<" el numero ["<<num<<"] no es potencia de dos"<<endl;
-	}
+	return false;
 	
 
 }
@@ -26,7 +24,7 @@ int main(){
 	cout<<"ingrese un numero: "<<endl;
 	cin>>numero;
 
-	calculaPotencia(numero);
+	cout<<calculaPotencia(numero);
 
 	return 0;
 }
