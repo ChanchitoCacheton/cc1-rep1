@@ -3,7 +3,7 @@ using namespace std;
 
 
 
-void busquedaPrimo(int num){
+int busquedaPrimo(int num){
 
   int n,p,i;
   n=2;
@@ -15,7 +15,7 @@ void busquedaPrimo(int num){
       {i=i+1;
         if(i==num)
           
-          cout<<"el numero primo en esa posicion es :"<<n<<endl;
+          return n;
       }
     n=n+1;
   }
@@ -28,7 +28,7 @@ int main()
   int num,n,p,i;
   cout<<"Ingresa un numero"<<endl;
   cin>>num;
-  
+  cout<<"el numero primo en esa posicion es"<<endl;
   busquedaPrimo(num);
   return 0;
 }
