@@ -2,6 +2,15 @@
 
 using namespace std;
 
+
+bool esBisiesto(int year){
+
+
+	return  (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+   
+}
+
+
 int main(){
 
 	 int a;
@@ -9,14 +18,7 @@ int main(){
      cout<<"Ingresa anio"<<endl;
      cin>>a;
 
-     if(a % 4 == 0 && (a % 100 != 0 || a % 400 == 0)){
-
-         cout<<"El anio "<<a<<" Si es bisiesto "<<endl;
-
-     }else{
-
-         cout<<"El anio "<<a<<" No es bisiesto "<<endl;
-     }
+     cout<<esBisiesto(a);
      
 	return 0;
 
