@@ -4,17 +4,14 @@
 
 using namespace std;
 
-int main(){
 
-	int numero;
-	int indice;
-	cout<<"ingrese un numero entero :"<<endl;
-	cin>>numero;
+void esPrimo(int num){
 
+	int indice=0;
 
-	for (int i=1;i<(numero+1);i++){
+	for (int i=1;i<(num+1);i++){
 
-		if(numero%i==0){
+		if(num%i==0){
 
 			indice++;
 		}
@@ -29,6 +26,20 @@ int main(){
 	}
 		else
 			cout<<"el numero es primo"<<endl;
+
+
+
+}
+
+
+int main(){
+
+	int numero;
+	int indice;
+	cout<<"ingrese un numero entero :"<<endl;
+	cin>>numero;
+
+	esPrimo(numero);
 
 
 	return 0;
