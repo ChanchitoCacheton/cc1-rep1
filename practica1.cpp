@@ -16,20 +16,20 @@ int main()
     cout << "ingrese cantidad de elementos ";
     cin >> n;
     
-    int* array = new int[n];
+    int arr[n];
 
     cout << "ingrese numeros para el arreglo" << endl;
     for ( int i = 0; i < n; i++ ) {
-        cin >> array[i];
+        cin >> arr[i];
     }
     
-    invertido( array, n );
+    invertido( arr, n );
     
     cout << "el arreglo invertido es : " << endl;
     for ( int i = 0; i < n; i++ ) { 
-        cout << "Arreglo [" << i << "] = " << array[i] << endl;
+        cout << "Arreglo [" << i << "] = " << arr[i] << endl;
     }
     
     
-    delete[] array;
+   
 }
