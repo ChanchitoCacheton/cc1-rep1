@@ -3,19 +3,20 @@
 
 using namespace std;
 
-void invertido( int *a, int n )
+void invertido( int a[], int n )
 {
-	int aX = a[0];
+	
     if(  n < 1 ){
     	return ;
     }
    
      
-    	else
+    	else{
+    		int temp = a[0];
     		a[0] = a[n-1];
-    		a[n-1] = aX;
-    		
-    		invertido( ++a, --n );
+    		a[n-1] = temp;
+    		return invertido(++a, n-1 );
+    	}
 
     
 }
